@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context="com.pmaptechnotech.pldua.activities.UserLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#5dac0a"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="  Login Page  "
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal" />
+
+        <EditText
+            android:id="@+id/edt_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/border"
+            android:hint="Mobile Number"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#f4efef"/>
+
+
+        <EditText
+            android:id="@+id/edt_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"
+            android:hint="Password"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#f4efef"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="#5dac0a"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold|normal"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#5dac0a"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold|normal" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

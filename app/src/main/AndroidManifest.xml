@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pmaptechnotech.pldua">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.UserLoginActivity" />
+        <activity android:name=".activities.UserRegisterActivity" />
+        <activity android:name=".activities.InformationActivity" />
+        <activity android:name=".activities.DiseaseIdentificationActivity" />
+        <activity android:name=".activities.AgricultureDeptInfoActivity" />
+        <activity android:name=".activities.ListDeptInfoActivity" />
+        <activity android:name=".adminside.DepartmentInfoActivity" />
+        <activity android:name=".adminside.UploadAgricultureInfoActivity" />
+        <activity android:name=".adminside.UploadForestInfoActivity" />
+        <activity android:name=".adminside.MushroomDiseasesActivity"></activity>
+    </application>
+
+</manifest>

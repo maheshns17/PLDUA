@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context="com.pmaptechnotech.pldua.adminside.MushroomDiseasesActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:gravity="center"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btn_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border2"
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="  Select Image  " />
+
+        <ImageView
+            android:id="@+id/image"
+            android:src="@drawable/image"
+            android:layout_marginTop="5dp"
+            android:layout_width="350dp"
+            android:layout_height="250dp"/>
+
+        <EditText
+            android:id="@+id/edt_diseases_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:hint="Disease Name"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#f4efef"/>
+
+        <EditText
+            android:id="@+id/edt_measures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Measures To Prevent Diseases"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#f4efef"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#5dac0a"
+            android:text="SUBMIT"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold|normal"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
